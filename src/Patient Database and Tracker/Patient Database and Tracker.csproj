@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F813C1FE-24BE-4EAF-9DB2-90B7E71278B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Patient_Database_and_Tracker</RootNamespace>
+    <AssemblyName>Patient DB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\lidxp04\Desktop\New folder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Patient Database and Class Tracker</ProductName>
+    <PublisherName>Patient Database &amp; Class Tracker</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DAB0B0BC7AEBEBCA7EF10E702FB8B2FCC5FB9C65</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Patient Database and Tracker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pin_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocX">
+      <HintPath>..\packages\DocX.1.0.0.13\lib\net40\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SQLite.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add New Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Time.Designer.cs">
+      <DependentUpon>Add New Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add New User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New User.Designer.cs">
+      <DependentUpon>Add New User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Consultation 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Consultation 1.Designer.cs">
+      <DependentUpon>Add or Edit Consultation 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Consultation 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Consultation 2.Designer.cs">
+      <DependentUpon>Add or Edit Consultation 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Classes.Designer.cs">
+      <DependentUpon>Add or Edit Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Patient.Designer.cs">
+      <DependentUpon>Add or Edit Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Practice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Practice.Designer.cs">
+      <DependentUpon>Add or Edit Practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Connection.Designer.cs">
+      <DependentUpon>Change Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change User Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change User Details.Designer.cs">
+      <DependentUpon>Change User Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change User Privileges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change User Privileges.Designer.cs">
+      <DependentUpon>Change User Privileges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class Database.cs" />
+    <Compile Include="Consultation Database.cs" />
+    <Compile Include="Current Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current Patients.Designer.cs">
+      <DependentUpon>Current Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Patient.Designer.cs">
+      <DependentUpon>Delete Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Practice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Practice.Designer.cs">
+      <DependentUpon>Delete Practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Reffering GP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Reffering GP.Designer.cs">
+      <DependentUpon>Delete Reffering GP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add or Edit Class Times.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Class Times.Designer.cs">
+      <DependentUpon>Add or Edit Class Times.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Class Start Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Class Start Time.Designer.cs">
+      <DependentUpon>Edit Class Start Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotten Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgotten Password.Designer.cs">
+      <DependentUpon>Forgotten Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate Letters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate Letters.Designer.cs">
+      <DependentUpon>Generate Letters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate Reports.Designer.cs">
+      <DependentUpon>Generate Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Screen.Designer.cs">
+      <DependentUpon>Login Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Initial Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial Screen.Designer.cs">
+      <DependentUpon>Initial Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mark Class Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mark Class Attendance.Designer.cs">
+      <DependentUpon>Mark Class Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Database.cs" />
+    <Compile Include="Practice Database.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Add or Edit Reffering GP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add or Edit Reffering GP.Designer.cs">
+      <DependentUpon>Add or Edit Reffering GP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reffering GP Database.cs" />
+    <Compile Include="Reset Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset Password.Designer.cs">
+      <DependentUpon>Reset Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDatabase.cs" />
+    <Compile Include="View Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Records.Designer.cs">
+      <DependentUpon>View Records.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add New Time.resx">
+      <DependentUpon>Add New Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New User.resx">
+      <DependentUpon>Add New User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Consultation 1.resx">
+      <DependentUpon>Add or Edit Consultation 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Consultation 2.resx">
+      <DependentUpon>Add or Edit Consultation 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Classes.resx">
+      <DependentUpon>Add or Edit Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Patient.resx">
+      <DependentUpon>Add or Edit Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Practice.resx">
+      <DependentUpon>Add or Edit Practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Connection.resx">
+      <DependentUpon>Change Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change User Details.resx">
+      <DependentUpon>Change User Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change User Privileges.resx">
+      <DependentUpon>Change User Privileges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Current Patients.resx">
+      <DependentUpon>Current Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Patient.resx">
+      <DependentUpon>Delete Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Practice.resx">
+      <DependentUpon>Delete Practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Reffering GP.resx">
+      <DependentUpon>Delete Reffering GP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Class Times.resx">
+      <DependentUpon>Add or Edit Class Times.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Class Start Time.resx">
+      <DependentUpon>Edit Class Start Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgotten Password.resx">
+      <DependentUpon>Forgotten Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generate Letters.resx">
+      <DependentUpon>Generate Letters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generate Reports.resx">
+      <DependentUpon>Generate Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Screen.resx">
+      <DependentUpon>Login Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial Screen.resx">
+      <DependentUpon>Initial Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add or Edit Reffering GP.resx">
+      <DependentUpon>Add or Edit Reffering GP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mark Class Attendance.resx">
+      <DependentUpon>Mark Class Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset Password.resx">
+      <DependentUpon>Reset Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Records.resx">
+      <DependentUpon>View Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Finisar.SQLite.BinaryDataWithZerosException.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteCommand.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteCommandBuilder.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteConnection.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteDataAdapter.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteDataReader.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteException.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteParameter.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteParameterCollection.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteRowUpdatedEventArgs.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteRowUpdatedEventHandler.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteRowUpdatingEventArgs.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteRowUpdatingEventHandler.datasource" />
+    <None Include="Properties\DataSources\Finisar.SQLite.SQLiteTransaction.datasource" />
+    <None Include="Resources\Add_But.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_But.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_But.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUser_But.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pin_Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
